@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Web studio</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <header class="head-part">
         <div class="container">
             <nav class="navigation">
-                <a class="logo-nav" href="./index.html"> Web<span class="text-logo">Studio</span></a>
+                <a class="logo-nav" href="./index.html" > Web<span class="text-logo">Studio</span></a>
             
                 <ul class="main-menu">
                     <li><a class="chapter" href="*">Studio</a></li>
@@ -129,7 +129,7 @@
                 <ul class="leader-background">
 
                     <li class="staff-main">
-                        <img class="img-leader" src="./images/team/Mark_Guerrero.jpg" alt="Mark Guerrero" width="264">
+                        <img class="img-leader" src="./images/team/Mark.jpg" alt="Mark Guerrero" width="264">
                         <div  class="about-staff" >
                             <h3 class="staff">Mark Guerrero</h3>
                             <p class="occupation">Product Designer</p>
@@ -159,7 +159,7 @@
                                 <li class="kinship">
                                     <a class="shrink" href="Link.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -169,7 +169,7 @@
                     </li>
 
                     <li class="staff-main">
-                        <img class="img-leader" src="./images/team/Tom_Ford.jpg" alt="Tom Ford" width="264">
+                        <img class="img-leader" src="./images/team/Ford.jpg" alt="Tom Ford" width="264">
                         <div class="about-staff">
                             <h3 class="staff">Tom Ford</h3>
                             <p class="occupation">Frontend Developer</p>
@@ -192,14 +192,14 @@
                                 <li class="kinship">
                                     <a class="shrink" href="Instagram.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3""></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="kinship">
                                     <a class="shrink" href="Link.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -208,7 +208,7 @@
                     </li>
                 
                     <li class="staff-main">
-                        <img class="img-leader" src="./images/team/Camila_Garcia.jpg" alt="Camila Garcia" width="264">
+                        <img class="img-leader" src="./images/team/Camila.jpg" alt="Camila Garcia" width="264">
                         <div class="about-staff">
                             <h3 class="staff">Camila Garcia</h3>
                             <p class="occupation">Marketing</p>
@@ -231,14 +231,14 @@
                                 <li class="kinship">
                                     <a class="shrink" href="Instagram.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3""></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="kinship">
                                     <a class="shrink" href="Link.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3""></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -247,7 +247,7 @@
                     </li>
                 
                     <li class="staff-main">
-                        <img class="img-leader" src="./images/team/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264">
+                        <img class="img-leader" src="./images/team/Daniel.jpg" alt="Daniel Wilson" width="264">
                         <div class="about-staff" >
                             <h3 class="staff">Daniel Wilson</h3>
                             <p class="occupation">UI Designer</p>
@@ -270,14 +270,14 @@
                                 <li class="kinship">
                                     <a class="shrink" href="Instagram.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3""></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="kinship">
                                     <a class="shrink" href="Link.com">
                                         <svg class="flatware" width="16" height="16">
-                                            <use href="./images/social-icons.svg#icon-Ellipse-1"></use>
+                                            <use href="./images/social-icons.svg#icon-Ellipse-3""></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -298,7 +298,11 @@
                 <ul class="port-list">
                     <li class="project-list">
                         <div class="img-prod" > 
-                            <img class="regard" src="./images/portfolio/banking.jpg" alt="banking" width="360">
+                            <img 
+                            class="regard" 
+                            srcset="./images/portfolio/banking.jpg x1, ./images/portfolio/banking@2x-5.jpg x2   "
+                            src="./images/portfolio/banking.jpg" 
+                            alt="banking" width="360">
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App · 
                             Cloud Storage App </p>
@@ -307,12 +311,14 @@
                             <h3 class="proposition">Banking App</h3>
                             <p class="direction">App</p>
                         </div>
-                        
                     </li>
                 
                     <li class="project-list" >
                         <div class="img-prod" > 
-                            <img class="regard" src="./images/portfolio/cashless_payment.jpg" alt="cashless" width="360">
+                            <img class="regard"
+                            srcset="./images/portfolio/cashless_payment.jpg x1, ./images/portfolio/cashless_payment@2x-4.jpg x2" 
+                            src="./images/portfolio/cashless_payment.jpg" 
+                            alt="cashless" width="360">
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic 
                             Fruit Ecommerce App ·
                             Cloud Storage App </p>
@@ -321,12 +327,14 @@
                             <h3 class="proposition">Cashless Payment</h3>
                             <p class="direction">Marketing</p>
                         </div>
-                        
                     </li>
                 
                     <li class="project-list" >
                          <div class="img-prod"> 
-                            <img class="regard" src="./images/portfolio/meditation_app.jpg" alt="meditation" width="360">
+                            <img class="regard"
+                            srcset="./images/portfolio/meditation_app.jpg x1, /images/portfolio/meditation_app@2x-4.jpg x2 " 
+                            src="./images/portfolio/meditation_app.jpg" 
+                            alt="meditation" width="360">
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App ·
                             Cloud Storage App </p>
@@ -335,12 +343,14 @@
                             <h3 class="proposition">Meditation App</h3>
                             <p class="direction">App</p>
                         </div>
-                       
                     </li>
                 
                     <li class="project-list" >
                         <div class="img-prod"  > 
-                            <img class="regard" src="./images/portfolio/taxi_service.jpg" alt="taxi" width="360">
+                            <img class="regard" 
+                            srcset="./images/portfolio/taxi.jpg x1, ./images/portfolio/taxi@2x-2.jpg x2"
+                            src="./images/portfolio/taxi.jpg" 
+                            alt="taxi" width="360">
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App ·
                             Cloud Storage App </p>
@@ -350,12 +360,14 @@
                             <h3 class="proposition">Taxi Service</h3>
                             <p class="direction">Marketing</p>
                         </div>
-                        
                     </li>
                 
                     <li class="project-list" >
                         <div class="img-prod"  > 
-                            <img class="regard" src="./images/portfolio/screen.jpg" alt="Screen" width="360">
+                            <img class="regard" 
+                            srcset="./images/portfolio/screen.jpg x1, ./images/portfolio/screen@2x-1.jpg x2"
+                            src="./images/portfolio/screen.jpg" 
+                            alt="Screen" width="360">
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App ·
                             Cloud Storage App </p>
@@ -364,12 +376,14 @@
                             <h3 class="proposition">Screen Illustrations</h3>
                             <p class="direction">Design</p>
                         </div>
-                        
                     </li>
                 
                     <li class="project-list" >
                         <div class="img-prod"> 
-                            <img class="regard" src="./images/portfolio/online_courser.jpg" alt="onine courser" width="360"> 
+                            <img class="regard" 
+                            srcset="./images/portfolio/online courser.jpg x1, ./images/portfolio/online courser@2x-1.jpg x2"
+                            src="./images/portfolio/onine courser.jpg" 
+                            alt="onine courser" width="360"> 
                             <p class="frtala"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App ·
                             Cloud Storage App </p>
@@ -378,8 +392,8 @@
                             <h3 class="proposition">Online Courses</h3>
                             <p class="direction">Marketing</p>
                         </div>
-                        
                     </li>
+
                 </ul>
             </div>
 
@@ -449,7 +463,7 @@
     </footer>
 
 
-    <div class="modal-window">
+    <!-- <div class="modal-window">
         <div class="precede">
             <button class="bend" type="button" >
                 <svg class="transmit" width="8" height="8">
@@ -524,11 +538,79 @@
 
 
         </div>
-        
+         -->
         
 
     </div>
 
+
+    <!-- mobil-menu -->
+
+    <!-- <div class="mobile-container" >
+        <button class="mobile-menu-btn" >
+            <svg class="megami" width="8" height="8" >
+                <use href="./images/window-icons.svg#icon-close" > </use>
+
+            </svg>
+        </button>
+
+        <ul class="mutaxe" >
+            <li class="babblings" >
+                <a href="" class="menu-link-current">Studio</a> 
+            </li>
+            <li class="babblings">
+                <a href="" class="menu-link">Portfolio</a>
+            </li>
+            <li class="babblings">
+                <a href="" class="menu-link" >Contacts</a>
+            </li>
+        </ul>
+
+
+
+        <ul class="meliorist">
+            <li class="aconitum">
+                <a class="glucose-accent" href="tel:+11(000)111-11-11"  >+11(000)111-11-11</a>
+            </li>
+            <li class="aconitum" >
+                <a class="glucose" href="Email: info@devstudio.com" >info@devstudio.com</a>
+            </li>
+        </ul>
+
+
+        <ul class="social-list">
+            <li class="frag">
+                <a class="link-cont" href="twitter.com">
+                    <svg class="colon" width="24" height="24">
+                        <use href="./images/social-icon.svg#icon-Ellipse"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="frag">
+                <a class="link-cont" href="Facebook.com">
+                    <svg class="colon" width="24" height="24">
+                        <use href="./images/social-icon.svg#icon-Ellipse-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="frag">
+                <a class="link-cont" href="Instagram.com">
+                    <svg class="colon" width="24" height="24">
+                        <use href="./images/social-icon.svg#icon-Ellipse"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="frag">
+                <a class="link-cont" href="Link.com">
+                    <svg class="colon" width="24" height="24">
+                        <use href="./images/social-icon.svg#icon-Ellipse-3"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+
+    </div> -->
 
 
 
