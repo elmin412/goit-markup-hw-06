@@ -258,13 +258,13 @@ ul {
 
 
 .target {
+    margin-bottom: 8px;
     font-family: "Roboto" sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
-    margin-bottom: 8px;
 }
 
 .plan-section .item-plan {
@@ -522,7 +522,12 @@ p {
 
 }
 
-p {}
+.button-nav {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: none;
+}
 
 
 
@@ -537,7 +542,7 @@ p {}
     
 }
 
-.all-foot-cont {
+.foot-container {
     width: 1158px;
     display: flex;
     justify-content: space-between;
