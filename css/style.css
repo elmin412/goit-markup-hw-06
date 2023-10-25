@@ -703,6 +703,8 @@ ul {
     margin-left: 16px;
 }
 
+        /* MODAL-WINDOWS */
+
 .modal-window {
     position: fixed;
     top: 0;
@@ -815,10 +817,13 @@ ul {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #4d5ae5;
+    fill: #2e2f42;
 }
 
-
+.implement:focus + .stimulate {
+    fill: #4d5ae5;
+    transition: fill 250ms;
+}
 
 
 .yield {
@@ -900,6 +905,7 @@ ul {
     fill: #f4f4fd;
 }
 
+            /* mobile-menu */
 
 .mobile-container {
     position: fixed;
@@ -944,8 +950,6 @@ ul {
 
 }
 
-
-
 .mutaxe {
     margin-bottom: auto;
 
@@ -978,6 +982,7 @@ ul {
 
 .meliorist {
     padding-bottom: 24px;
+    padding-left: 16px;
 }
 
 
