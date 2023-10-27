@@ -69,7 +69,6 @@ button {
 .head-part .container {
     display: flex;
     margin: 0 auto;
-    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -189,21 +188,13 @@ button {
     color: #404BBF;
 }
 
-@media only screen and (min-resolution: 192dpi) {
-    .banner {
-        background-image:
-            linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/fon/Dark-bg_mob@2x.jpg);
-    }
-}
 
     /* section 1 */
 .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/fon/Dark-bg_mob.jpg);
     padding-top: 72px;
-    padding-bottom: 200px;
+    padding-bottom: 72px;
     max-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,6 +202,13 @@ button {
     margin: 0 auto;
 }
 
+@media only screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+        url(../images/fon/Dark-bg_mob@2x.jpg);
+    }
+}
 
 
 .tagline {
@@ -218,7 +216,7 @@ button {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.03em;
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
@@ -293,6 +291,7 @@ button {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    margin-bottom: 8px;
 
 
 }
@@ -310,7 +309,7 @@ button {
 /* section3 */
 .team-section {
     background-color: #F4F4FD;
-    padding: 96px 16px;
+    padding-top: 96px;
     text-align: center;
 }
 
@@ -329,7 +328,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 24px;
+    gap: 72px;
 }
 
 .staff-main {
@@ -342,11 +341,13 @@ button {
 
 }
 
+
 .img-leader {
     border-radius: 0px 0px 4px 4px;
     width: 100%;
 
 }
+
 
 .about-staff {
     padding-top: 32px;
@@ -716,7 +717,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     top: 0;
     left: 0;
 
-    
+    padding: 24px 24px 40px 16px;
 
     display: flex;
     flex-direction: column;
@@ -756,8 +757,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .mutaxe {
     margin-bottom: auto;
     padding-top: 72px;
-    padding-left: 16px;
-    padding-right: 16px;
+    
 
 }
 
@@ -766,7 +766,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .menu-link {
-    color: black;
+    color: #2E2F42;
 
     font-size: 36px;
     font-weight: 700;
@@ -777,7 +777,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .menu-link-current {
-    color: blue;
+    color: #404bbf;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -787,9 +787,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .meliorist {
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-bottom: 24px;
+    margin-bottom: 48px;
 }
 
 .aconitum:not(:last-child) {
@@ -797,7 +795,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .glucose {
-    color: black;
+    color: #434455;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -807,15 +805,18 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .glucose-accent {
-    color: blue;
+    color: #4D5AE5;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 
 }
 
 .social-list-mob-menu {
     display: flex;
     gap: 40px;
-    justify-content: center;
-    margin-bottom: 40px;
     
 
 }
@@ -1068,14 +1069,28 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         display: block;
     }
 
+    .contacts {
+        font-family: 'Roboto' sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+
+    .logo-nav {
+        margin: 0;
+    }
     /* section-1 */
 
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/fon/Dark-bg_tab.jpg);
-        padding-top: 188px;
-        padding-bottom: 188px;
-        max-width: 1440px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1084,11 +1099,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 @media only screen and (min-resolution: 192dpi) {
-    .banner {
-        background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)),
-        url(../images/fon/Dark-bg_tab@2x.jpg);
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+             url(../images/fon//Dark-bg_tab@2x.jpg);
     }
 }
 
@@ -1145,6 +1158,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 64px 24px;
     }
 
     /* section-4 */
@@ -1155,6 +1169,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 72px 24px;
     }
 
     .project-list {
@@ -1416,7 +1431,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     }
 
    
-    
+    .head-part .container {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     .navigation {
         display: flex;
         align-items: center;
@@ -1435,6 +1457,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+    }
+
+    @media only screen and (min-resolution: 192dpi) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/fon/people-office_pc@2x.jpg);
+        }
     }
 
     .tagline {
@@ -1757,3 +1786,14 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 }
+
+
+
+
+\images\team\Camila@2x.jpg
+
+\images\team\Mark@2x.jpg
+
+\images\team\Daniel@2x.jpg
+
+\images\team\Ford@2x.jpg
